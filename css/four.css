@@ -1,0 +1,238 @@
+/*
+* @Author: nanjiao
+* @Date:   2018-08-30 09:42:41
+* @Last Modified by:   nanjiao
+* @Last Modified time: 2018-08-30 10:20:00
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "苹方";
+    list-style: none;
+    text-decoration: none;
+}
+header .daohang{
+    width: 100%;
+    height: 75px;
+    background: #333333;
+   
+}
+header .daohang ul li{
+    width: 100px;
+    height: 64px;
+    float: left;
+    text-align: center;
+    line-height: 75px;
+    color: #fff;
+    display: none;
+}
+header .daohang ul li:nth-child(2){
+    
+    width:340px;
+    height:57px;
+    padding-left: 70px;
+    display: inline;
+    float: left;
+}
+.daohang ul li:nth-child(2) .pic{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/daohang.png') ;
+    background-size: 140px 57px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.sousuo{
+     width:240px; 
+    height: 23px;
+    float: right;
+    padding-top: 22.5px;
+
+}
+header .daohang ul li:nth-child(1){
+   display: inline;
+}
+
+.ss{
+     width: 30px;
+   height: 30px;
+ /*   background: #3EC9AD; */
+   float: right;
+   line-height: 30px;
+   text-align: center;
+}
+input{
+    width: 210px;
+    height: 30px;
+    float: left;
+      display: none;
+}
+header .dh li{
+    width: 100px;
+}
+.ss i{
+    font-size: 20px;
+    color: #fff;
+    line-height: 3px;
+}
+
+header .daohang ul li a i{
+    color: #FFF;
+    font-size: 25px;
+    line-height: 75px;
+}
+
+
+content{
+    width: 100%;
+    height: 802px;
+    background-color: #fff;
+}
+content .content img{
+    width: 250px;
+    float: left; 
+    height: 166px;
+    padding-bottom: 20px;
+
+   /*  margin-bottom: 30px; */
+}
+content .content li{
+	/* width: 100%; */
+    height: 175px;
+    float: left;
+    line-height: 10px;
+    padding-top: 10px;
+    border: 1px solid #ccc;
+}
+content .content li h5{
+    font-size: 20px;
+    text-align: left;
+    line-height: 15px;
+}
+content .content .zi{
+	/* padding-bottom:200px; */
+	/* float: left; */
+	padding-left: 260px;
+}
+content .content .zi p{
+        color: #888888;
+        font-size: 12px;
+        text-align: left;
+        line-height: 15px;
+}
+content .content .zi h6{
+        color: #000;
+        font-size: 14px;
+        text-align: left;
+}
+content .content .zi a{
+        color: green;
+        font-size: 10px;
+        float: right;
+}
+
+
+
+
+
+
+
+pinpai{
+    width: 100%;
+    height: 802px;
+    background-color: #F7F7F7;
+}
+pinpai .wenzi h5{
+    padding-top: 20px;
+    color: #000;
+    font-size: 29px;
+    text-align: center;
+} 
+pinpai .wenzi h6{
+    color: #BABABA;
+    font-size: 15px;
+    text-align: center;
+    line-height: 20px;
+}
+
+pinpai .tupian li{
+	background-color: #F7F7F7;
+    text-align: center;
+    height: 90px;
+    float: left;
+    
+}
+pinpai .tupian li img{
+    font-size: 40px;
+    /* color: #888888; */
+    width: 180px;
+    height: 80px;
+    text-align: center;
+}
+footer{
+    background: #ccc;
+    padding-top: 20px;
+    height: 100px;
+    text-align: center;
+}
+
+
+
+
+
+@media screen and (min-width:768px){
+
+}
+@media screen and (min-width:992px){
+    header .daohang{
+    background: #fff;
+
+   
+}
+    header .daohang ul li{
+    display: inline;
+    color: black;
+}
+.daohang ul li:nth-child(2) .pic{
+  /*   width: 100%;
+    height: 100%; */
+    background-image: url('../img/导航1.png') ;
+   /*  background-size: 140px 57px;
+    background-repeat: no-repeat;
+    background-position: center; */
+
+}
+header .daohang ul li:nth-child(2){
+    width: 140px;
+    height: 75px;
+    padding-left: 0px;
+    display: inline;
+    padding-right: 0px;
+
+}
+
+header .daohang ul li:nth-child(1){
+
+  display: none;
+}
+
+.ss{
+     width: 30px;
+   height: 30px;
+   background: #3EC9AD;
+   float: right;
+   line-height: 30px;
+   text-align: center;
+}
+input{
+    width: 210px;
+    height: 30px;
+    float: left;
+      display:inline;
+}
+}
+/* 大屏幕 col-lg- >1200px */
+@media screen and (min-width:1200px){
+}   

@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>双下标轮播</title>
+    <script src="animate.js"></script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            box-sizing: border-box;
+        }
+        .banner{
+            width: 100%;
+            height: 460px;
+            background: red;
+        }
+        .neikuan{
+            width: 1226px;
+            height: 100%;
+            margin: 0 auto;
+            background: orange;
+            position: relative;
+        }
+        .imgs{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+        .imgs img{
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 1226px;
+        }
+        ul{
+            width: 120px;
+            height: 10px;
+            background: blue;
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+        }
+        ul li{
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #999;
+        }
+        ul li.active{
+            background: green;
+        }
+        .leftBtn{
+            width: 60px;
+            height: 130px;
+            background: pink;
+            position: absolute;
+            top:0;
+            bottom: 0;
+            left: 0;
+            margin: auto 0;
+
+        }
+        .rightBtn{
+            width: 60px;
+            height: 130px;
+            background: pink;
+            position: absolute;
+            top:0;
+            bottom: 0;
+            right: 0;
+            margin: auto 0;
+        }
+    </style>
+</head>
+<body>
+   <div class="banner">
+       <div class="neikuan">
+           <div class="imgs">
+               <img src="img/lb.jpg" alt="">
+               <img src="img/03.jpg" alt="">
+               <img src="img/16.jpg" alt="">
+               <img src="img/12.jpg" alt="">
+               <img src="img/13.jpg" alt="">
+
+           </div>
+           <ul>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+           </ul>
+           <div class="leftBtn"></div>
+           <div class="rightBtn"></div>
+       </div>
+   </div>
+</body>
+</html>
+<script>
+    <!--1.获取元素-->
+    let imgs=document.querySelectorAll("img");
+    let dots=document.querySelectorAll("li");
+    let banner=document.querySelectorAll(".banner")[0];
+    let leftBtn=document.querySelectorAll(".leftBtn")[0];
+    let rightBtn=document.querySelectorAll(".rightBtn")[0];
+    // console.log(imgs,dots,banner,leftBtn,rightBtn);
+    let widths=parseInt(getComputedStyle(imgs[0],null).width);
+    console.log(widths);
+//    2.初始值
+    imgs[0].style.left=0;
+    dots[0].classList.add("active");
+    let now=0;
+    let next=0;
+
+    let t=setInterval(move,2000);
+    function move() {
+        next++;
+        if(next==imgs.length){
+            next=0;
+        }
+        //确保下一张图永远在最右侧
+        imgs[next].style.lsft=widths+"px";
+        animate(imgs[now],{left:-widths});
+        animate(imgs[next],{left:0});
+        dots[now].classList.remove("active");
+        dots[next].classList.add("active");
+        now=next;
+    }
+
+</script>

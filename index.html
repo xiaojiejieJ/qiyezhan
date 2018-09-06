@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>极简家居</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="https://at.alicdn.com/t/font_813708_66l0jbaahk.css">
+    <link rel="stylesheet" href="css/swiper-4.3.5.min.css">
+    <script src="js/animate.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<style>
+        .banner img{
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            /* left: 400px; */
+            /* left: 1226px; */
+        }
+        .slip .dot ul{
+            display: flex;
+            position: absolute;
+            bottom: 20px;
+            right: 30px;
+        }
+        .slip .dot li{
+            width: 10px;
+            height: 10px;
+            margin: 0 5px;
+            border: 2px solid #fff;
+            border-color: rgba(255,255,255,0.3);
+            border-radius: 10px;
+            text-align: left;
+            text-indent: -9999px;
+            overflow: hidden;
+            background: rgba(0,0,0,0.4);
+            transition: all .2s;
+            cursor: pointer;
+        }
+        .slip .dot li.active{
+            border: 2px solid #fff;
+            border-color: rgba(255,255,255,0.3);
+            background: #fff;
+        }
+        .back{
+            width: 70px;
+            height: 70px;
+            background: #ccc;
+            color: white;
+            font-size: 70px;
+            text-align: center;
+            padding-top: 20px;
+            /* line-height: 70px; */
+            position: fixed;
+            bottom: 30px;
+            right: 20px;
+
+        }
+    </style>
+<body>
+    <script src="js/swiper-4.3.5.min.js"></script>
+	<!-- 头部 -->
+	<header>
+	    <div class="daohang">
+	    	<div class="container">
+	    	<ul>
+	    		<li>
+	    			<a href="."><i class="iconfont icon-webicon03"></i></a>
+	    		</li>
+
+	    		<li>
+	    			<div class="pic"></div>
+	    		</li>
+	    		<li><a href="index.html">首页</a></li>
+	    		<li><a href="two.html">效果图</a></li>
+	    		<li><a href="three.html">样板案例</a></li>
+	    		<li><a href="four.html">装修知识</a></li>
+	    		<li><a href="five.html">关于我们</a></li>
+	    		<div class="sousuo">
+	    			<input type="text" placeholder="搜索关键词">
+					<div class="ss">
+						<i class="iconfont icon-sousuo"></i>
+	    		</div>
+	    		</div>
+
+	    	</ul>
+	    </div>
+	    </div>
+    </header>
+    <!-- banner -->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img src="img/轮播.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="img/lb.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="img/16.jpg" alt="">
+        </div>
+    </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>
+    
+    <!-- 如果需要导航按钮 -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    
+    <!-- 如果需要滚动条 -->
+    <div class="swiper-scrollbar"></div>
+</div>
+    </div>
+
+
+
+
+    <banner>
+    	<div class="container">
+    	<div class="wenzi">
+    		<h5>装修流程</h5>
+    		<h6>业主权益第一，我们始终保障着业主装修每一步</h6>
+    	</div>
+    	<div class="tubiao">
+    		<ul>
+    			<li class="col-xs-6 col-sm-6 col-md-6 col-lg-2">
+    				<a href="#">
+						<i class="iconfont icon-fangzi01-copy"></i>
+						<p>收房量房</p>
+					</a>
+    			</li>
+    			<li class="col-xs-6 col-sm-6 col-md-6 col-lg-2">
+    				<a href="#">
+						<i class="iconfont icon-qianbi"></i>
+						<p>设计阶段</p>
+					</a>
+    			</li>
+    			<li class="col-xs-6 col-sm-6 col-md-6 col-lg-2">
+    				<a href="#">
+						<i class="iconfont icon-shuqian-s"></i>
+						<p>材料选购</p>
+					</a>
+    			</li>
+    			<li class="col-xs-6 col-sm-6 col-md-6 col-lg-2">
+    				<a href="#">
+						<i class="iconfont icon-custom-constructi"></i>
+						<p>施工阶段</p>
+					</a>
+    			</li>
+    			<li class="col-xs-6 col-sm-6 col-md-6 col-lg-2">
+    				<a href="#">
+						<i class="iconfont icon-lianjie"></i>
+						<p>竣工验收</p>
+					</a>
+    			</li>
+    			<li class="col-xs-6 col-sm-6 col-md-6 col-lg-2">
+    				<a href="#">
+						<i class="iconfont icon-ruanzhuangpeishi"></i>
+						<p>软装配饰</p>
+					</a>
+    			</li>
+    		</ul>
+    	</div>
+    	</div>
+    </banner>
+    <!-- anli -->
+    <anli>
+        <div class="container">
+    	    <div class="wenzi">
+    		    <h5>装修案例</h5>
+    		    <h6>我们累计共为0000位业主提供一站式的装修服务</h6>
+    	    </div>
+    	    <div class="zhanshi">
+    		    <ul>
+    			    <li class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+    				    <img src="img/anli1.jpg" alt="">
+    				    <h5>案例展示#8</h5>
+                        <div class="zi">
+                    	    <p>【北欧家装】180㎡北欧家装｜某某小区</p>
+                            <p>项目地址： 	江苏苏州</p>
+                            <p>项目面积： 	1...</p>
+                        </div>
+                        <div class="x"><a href="">MORE</a></div>
+    			    </li>
+    			    <li class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+    				    <img src="img/anli2.jpg" alt="">
+    				    <h5>案例展示#7</h5>
+                        <div class="zi">
+                    	    <p>【北欧家装】180㎡北欧家装｜某某小区</p>
+                            <p>项目地址： 	江苏苏州</p>
+                            <p>项目面积： 	1...</p>
+                        </div>
+                        <div class="x"><a href="">MORE</a></div>
+    			    </li>
+    			    <li class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+    				    <img src="img/anli3.jpg" alt="">
+    				    <h5>案例展示#6</h5>
+                        <div class="zi">
+                    	    <p>【北欧家装】180㎡北欧家装｜某某小区</p>
+                            <p>项目地址： 	江苏苏州</p>
+                            <p>项目面积： 	1...</p>
+                        </div>
+                        <div class="x"><a href="">MORE</a></div>
+    			    </li>
+    			    <li class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+    				    <img src="img/anli4.jpg" alt="">
+    				    <h5>案例展示#5</h5>
+                        <div class="zi">
+                    	    <p>【北欧家装】180㎡北欧家装｜某某小区</p>
+                            <p>项目地址： 	江苏苏州</p>
+                            <p>项目面积： 	1...</p>
+                        </div>
+                        <div class="x"><a href="">MORE</a></div>
+    			    </li>
+    			    <li class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+    				    <img src="img/轮播.jpg" alt="">
+    				    <h5>案例展示#4</h5>
+                        <div class="zi">
+                    	    <p>【北欧家装】180㎡北欧家装｜某某小区</p>
+                            <p>项目地址： 	江苏苏州</p>
+                            <p>项目面积： 	1...</p>
+                        </div>
+                        <div class="x"><a href="">MORE</a></div>
+    			    </li>
+    			    <li class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+    				    <img src="img/anli6.jpg" alt="">
+    				    <h5>案例展示#3</h5>
+                        <div class="zi">
+                    	    <p>【北欧家装】180㎡北欧家装｜某某小区</p>
+                            <p>项目地址： 	江苏苏州</p>
+                            <p>项目面积： 	1...</p>
+                        </div>
+                        <div class="x"><a href="">MORE</a></div>
+    			    </li>
+    		    </ul>
+    	    </div>
+        <div class="move"><p><a href="three.html">了解更多装修案例&nbsp;&nbsp;→</a></p></div>
+        </div>
+    </anli>
+
+    <zhuangxiu>
+        <div class="container">
+    	<div class="wenzi">
+    		<h5>装修资讯</h5>
+    		<h6>精选成功案例，快来看看我们装出的家</h6>
+    	</div>
+    	<div class="tupian">
+    		<ul>
+    			<li class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+    				<img src="img/mao.jpg" alt="">
+    		        <div class="zi">
+    			        <h5>软装中的色彩搭配很重要,不可忽略细节</h5>
+    			        <p>2017-03-17</p>
+    		        </div>
+    			</li>
+    			<li class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+    				<img src="img/1.jpg" alt="">
+    		        <div class="zi">
+    			        <h5>软装中的色彩搭配很重要,不可忽略细节</h5>
+    			        <p>2017-03-17</p>
+    		        </div>
+    			</li>
+    			<li class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+    				<img src="img/2.jpg" alt="">
+    		        <div class="zi">
+    			        <h5>我国家庭软装平均花费占装修平均总费用四成</h5>
+    			        <p>2017-03-17</p>
+    		        </div>
+    			</li>
+    			<li class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+    				<img src="img/3.jpg" alt="">
+    		        <div class="zi">
+    			        <h5>新房装修前要注意的8个问题,省钱不说,主要是能减少遗憾呀!</h5>
+    			        <p>2017-03-17</p>
+    		        </div>
+    			</li>
+    			<li class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+    				<img src="img/4.jpg" alt="">
+    		        <div class="zi">
+    			        <h5>软装中的色彩搭配很重要,不可忽略细节</h5>
+    			        <p>2017-03-17</p>
+    		        </div>
+                </li>
+    			<li class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+    				<img src="img/5.jpg" alt="">
+    		        <div class="zi">
+    			        <h5>餐厅装饰画选什么?精品山水国画装饰美景多多</h5>
+    			        <p>2017-03-17</p>
+    		        </div>
+    			</li>
+    		</ul>
+    	</div>
+    	<div class="move"><p><a href="four.html">阅读装修资讯&nbsp;&nbsp;→</a></p></div>
+    </div>
+    </zhuangxiu>
+    <tupian>
+        <div class="container">
+    	<div class="wenzi">
+    		<h5>装修案例</h5>
+    		<h6>海量效果图为业主提供更多灵感</h6>
+    	</div>
+    	<div class="tupian">
+    		<ul>
+    			<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+    				<img src="img/11.jpg" alt="">
+    			</li>
+    			<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+    				<img src="img/12.jpg" alt="">
+    			</li>
+    			<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+    				<img src="img/13.jpg" alt="">
+    			</li>
+    			<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+    				<img src="img/14.jpg" alt="">
+    			</li>
+    			<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+    				<img src="img/15.jpg" alt="">
+    			</li>
+    			<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+    				<img src="img/16.jpg" alt="">
+    			</li>
+    			<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+    				<img src="img/17.jpg" alt="">
+    			</li>
+    			<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+    				<img src="img/18.jpg" alt="">
+    			</li>
+    		</ul>
+    	</div>
+    	<div class="move"><p>浏览更多效果图&nbsp;&nbsp;→</p></div>
+    </div>
+    </tupian>
+    <renwu>
+        <div class="container">
+    	<div class="wenzi">
+    		<h5>设计师团队</h5>
+    		<h6>我们累计共为0000位业主提供一站式的装修服务</h6>
+    	</div>
+    	<div class="tupian">
+    		<ul>
+    			<li class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+    				<div class="hezi"><img src="img/人1.jpg" alt=""></div>
+    		        <h5>张媛</h5>
+    		        <p>优秀设计师</p>
+    		        <h6>经验：8年 代表作：3件</h6>
+    		        <div class="zi">查看TA的案例</div>
+    			</li>
+    			<li class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+    				<div class="hezi"><img src="img/人2.jpg" alt=""></div>
+    		        <h5>张媛</h5>
+    		        <p>优秀设计师</p>
+    		        <h6>经验：8年 代表作：3件</h6>
+    		        <div class="zi">查看TA的案例</div>
+    			</li>
+    			<li class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+    				<div class="hezi"><img src="img/人3.jpg" alt=""></div>
+    		        <h5>张媛</h5>
+    		        <p>优秀设计师</p>
+    		        <h6>经验：8年 代表作：3件</h6>
+    		        <div class="zi">查看TA的案例</div>
+    			</li>
+    			<li class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+    				<div class="hezi"><img src="img/人4.jpg" alt=""></div>
+    		        <h5>张媛</h5>
+    		        <p>优秀设计师</p>
+    		        <h6>经验：8年 代表作：3件</h6>
+    		        <div class="zi">查看TA的案例</div>
+    			</li>
+    			<li class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+    				<div class="hezi"><img src="img/人5.jpg" alt=""></div>
+    		        <h5>张媛</h5>
+    		        <p>优秀设计师</p>
+    		        <h6>经验：8年 代表作：3件</h6>
+    		        <div class="zi">查看TA的案例</div>
+    			</li>
+    			<li class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+    				<div class="hezi"><img src="img/人6.jpg" alt=""></div>
+    		        <h5>张媛</h5>
+    		        <p>优秀设计师</p>
+    		        <h6>经验：8年 代表作：3件</h6>
+    		        <div class="zi">查看TA的案例</div>
+    			</li>
+    		</ul>
+    	</div>
+    </div>
+    </renwu>
+    <pinpai>
+        <div class="container">
+    	<div class="wenzi">
+    		<h5>合作品牌</h5>
+    		<h6>众多优质品牌为业主提供高品质建材支持</h6>
+    	</div>
+    	<div class="tupian">
+    		<ul>
+    			<li class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+    				<img src="img/tubiao1 (1).jpg" alt="">
+    			</li>
+    			<li class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+    				<img src="img/tubiao1 (2).jpg" alt="">
+    			</li>
+    			<li class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+    				<img src="img/tubiao1 (3).jpg" alt="">
+    			</li>
+    			<li class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+    				<img src="img/tubiao1 (4).jpg" alt="">
+    			</li>
+    			<li class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+    				<img src="img/tubiao1 (5).jpg" alt="">
+    			</li>
+    			<li class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+    				<img src="img/tubiao1 (6).jpg" alt="">
+    			</li>
+    			<li class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+    				<img src="img/tubiao1 (7).jpg" alt="">
+    			</li>
+    			<li class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+    				<img src="img/tubiao1 (8).jpg" alt="">
+    			</li>
+    			<li class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+    				<img src="img/tubiao1 (9).jpg" alt="">
+    			</li>
+    			<li class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+    				<img src="img/tubiao1 (10).jpg" alt="">
+    			</li>
+    			<li class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+    				<img src="img/tubiao1 (11).jpg" alt="">
+    			</li>
+    			<li class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+    				<img src="img/tubiao1 (12).jpg" alt="">
+    			</li>
+    		</ul>
+    	</div>
+    </div>
+    </pinpai>
+    <div class="back">&circ;</div>
+    <footer>
+        <div class="container">
+    	<p>Powered by QFY 版权所有 ©2010-2016</p>
+    	<p>地址：江苏省苏州市工业园区金鸡湖大道00号</p>
+    	<p>苏ICP备00010001号</p>
+    </div>
+    </footer>
+
+
+
+<script>        
+  var mySwiper = new Swiper ('.swiper-container', {
+    direction: 'horizontal',
+    loop: true,
+    
+    // 如果需要分页器
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    
+    // 如果需要滚动条
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  }) 
+
+
+  var mySwiper = new Swiper('.swiper-container',  {
+  autoplay:true,
+
+
+   // 如果需要分页器
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    
+    // 如果需要滚动条
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  //等同于以下设置
+  /*autoplay: {
+    delay: 3000,
+    stopOnLastSlide: false,
+    disableOnInteraction: true,
+    },*/
+});
+
+
+</script>
+</body>
+</html>

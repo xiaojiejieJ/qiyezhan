@@ -1,0 +1,204 @@
+/*
+* @Author: nanjiao
+* @Date:   2018-08-30 10:48:19
+* @Last Modified by:   nanjiao
+* @Last Modified time: 2018-08-30 12:47:13
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "苹方";
+    list-style: none;
+    text-decoration: none;
+}
+header .daohang{
+    width: 100%;
+    height: 75px;
+    background: #333333;
+   
+}
+header .daohang ul li{
+    width: 100px;
+    height: 64px;
+    float: left;
+    text-align: center;
+    line-height: 75px;
+    color: #fff;
+    display: none;
+}
+header .daohang ul li:nth-child(2){
+    
+    width:340px;
+    height:57px;
+    padding-left: 70px;
+    display: inline;
+    float: left;
+}
+.daohang ul li:nth-child(2) .pic{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/daohang.png') ;
+    background-size: 140px 57px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.sousuo{
+     width:240px; 
+    height: 23px;
+    float: right;
+    padding-top: 22.5px;
+
+}
+header .daohang ul li:nth-child(1){
+   display: inline;
+}
+
+.ss{
+     width: 30px;
+   height: 30px;
+ /*   background: #3EC9AD; */
+   float: right;
+   line-height: 30px;
+   text-align: center;
+}
+input{
+    width: 210px;
+    height: 30px;
+    float: left;
+      display: none;
+}
+header .dh li{
+    width: 100px;
+}
+.ss i{
+    font-size: 20px;
+    color: #fff;
+    line-height: 3px;
+}
+
+header .daohang ul li a i{
+    color: #FFF;
+    font-size: 25px;
+    line-height: 75px;
+}
+
+
+
+
+.tu{
+	width: 100%;
+    height: 565px;
+    background-image: url('../img/轮播.jpg') ;
+    background-size: 100% 565px;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff; 
+    line-height: 30px;
+}
+.tu h5{
+	font-size: 24px;
+}
+.tu p{
+	font-size: 12px;
+	line-height: 50px;
+}
+
+ content .tu .zhezhao{
+	width: 100%;
+    height: 565px;
+    background: rgba(130, 130, 133, 0.6);
+} 
+content .tu .zhezhao .da{
+	width: 30%;
+	display: flex;
+	flex-direction: row;
+	margin-right: 5px;
+}
+content .tu .zhezhao .da .xiao{
+	margin-right: 20px;
+    color: #fff;
+	background-image: url('../img/social_icon_16x16.png');
+	background-repeat: no-repeat;
+    height: 16px;
+    width: 16px;
+    background-position: 0 -96px;
+    display: inline-block;
+    margin-top: 10px;
+}
+content .tu .zhezhao .da .xiao:nth-child(2){
+	background-position: -16px -96px;
+}
+content .tu .zhezhao .da .xiao:nth-child(3){
+	background-position: -128px -96px;
+}
+content .tu .zhezhao .da .xiao:nth-child(4){
+	background-position: -64px -96px;
+}
+content .tu .zhezhao .da .xiao:nth-child(5){
+	background-position: -80px -96px;
+}
+footer{
+	/* margin-top: 50px; */
+    background: #ccc;
+    padding-top: 20px;
+    height: 120px;
+    text-align: center;
+}
+
+
+
+
+
+@media screen and (min-width:768px){
+
+}
+@media screen and (min-width:992px){
+    header .daohang{
+    background: #fff;
+
+   
+}
+    header .daohang ul li{
+    display: inline;
+    color: black;
+}
+.daohang ul li:nth-child(2) .pic{
+ 
+    background-image: url('../img/导航1.png') ;
+ 
+
+}
+header .daohang ul li:nth-child(2){
+    width: 140px;
+    height: 75px;
+    padding-left: 0px;
+    display: inline;
+    padding-right: 0px;
+
+}
+
+header .daohang ul li:nth-child(1){
+
+  display: none;
+}
+
+.ss{
+     width: 30px;
+   height: 30px;
+   background: #3EC9AD;
+   float: right;
+   line-height: 30px;
+   text-align: center;
+}
+input{
+    width: 210px;
+    height: 30px;
+    float: left;
+      display:inline;
+}
+}
+/* 大屏幕 col-lg- >1200px */
+@media screen and (min-width:1200px){
+}   
